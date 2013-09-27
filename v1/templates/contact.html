@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="fr" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title><?php echo APPLICATION_TITLE; ?></title>
+    
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="templates/styles/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="templates/styles/reset.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="templates/styles/print.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slides.min.jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <?php include 'templates/_menu.html'; ?>
+<div id="container">
+        <div id="header">
+		
+		<?php include 'templates/_header.html'; ?>
+        </div><!--FinHeader-->
+        <div id="content_top"></div>
+        <div id="content">
+            <div id="contact">
+		<form id="formulairecontact" method="post" action="" >
+                    <fieldset>
+                            <h2 class="title_h2">Contact</h2>
+                            <div id="nom_contact">
+                                <label class="error message" for="nom">Nom Obligatoire</label>
+                                <label for="nom">Nom</label> 
+                                <input class="required" type="text" name="nom" id="nom" value=""/>
+                                
+                            </div>
+                            <div id="email_contact">
+                                <label  for="email">Email</label>
+                                <input type="text" name="email" class="email required" id="email" value=""/>
+                                <label class="error message" for="email">Veuillez insérer une adresse mail valide et requise</label>
+                            </div>
+                            <div id="sujet_contact">
+                                <label  for="email">Sujet</label>
+                                <input type="text" class="required" name="sujet" id="sujet" value=""/>
+                                <label class="error message" for="sujet">Sujet Obligatoire</label>
+                            </div>
+                            <div id="texte_contact">
+                                <label for="message">Message</label>
+                                <textarea rows="10" cols="25" class="required" name="message" id="message"></textarea>
+                                <label class="error message" for="message">Message Obligatoire</label>
+                            </div>
+                            <button type="submit">Envoyer</button>
+                    </fieldset>
+		</form>
+	    </div><!--finContact-->
+        </div><!--FinContent-->
+    </div><!--finContainer-->
+    <div id="footer">
+	<?php include 'templates/_footer.html'; ?>
+    </div><!--FinFooter-->
+</body>
+</html>

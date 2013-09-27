@@ -1,0 +1,18 @@
+<?php include 'templates/_header.html'; ?>
+
+    <h2 class="admin">Ajouter un article</h2>
+    <div id="contenu">
+        <form method="post" action="insert-news.php" />
+            <div id="title">
+                Titre<br />
+                <input type="text" name="title" value=""/>
+                <br/>
+            </div>
+            <div id="content_form">
+                <textarea name="content"></textarea><br />
+            </div>
+            <input type="submit" value="Ajouter l'article"/>
+        </form>
+    </div>
+<?php include 'templates/_footer.html'; ?>
+

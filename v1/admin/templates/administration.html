@@ -1,0 +1,21 @@
+<?php include 'templates/_header.html'; ?>
+
+<h2 class="admin">Dashboard</h2>
+    <div id="contenu">
+        <div class="inside">
+            <p class="sub">Contenu</p>
+            <ul>
+                <li><?php echo $row2[0];?> <a href="modif-news.php">Articles</a></li>
+                <li><?php echo $row3[0];?> <a href="insert-image.php">Images [Slider]</a></li>
+                <li><?php echo $row4[0];?> <a href="insert-image-galerie.php">Images [Galerie]</a></li>
+            </ul>
+            <p class="sub">Jeux concours</p>
+            <ul>
+                <li><?php echo $row[0];?> <a href="participants.php">Participants</a></li>
+                <li><img src="templates/img/excel.png" /><a href="export-excel.php">Exporter les participants vers Excel ?</a></li>
+                <li><img src="templates/img/newsletter.png" /><a href="newsletter.php">Envoyer un mail a tous les participants ?</a></li>
+            </ul>
+        </div>
+    </div>
+
+<?php include 'templates/_footer.html'; ?>

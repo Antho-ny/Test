@@ -1,0 +1,35 @@
+<?php include 'templates/_header.html'; ?>
+
+    <h2 class="admin">Liste des participants</h2>
+    <div id="contenu">
+    <table class="widefat post fixed" cellspacing="0">
+        <thead>
+            <tr>
+                <th class="column-id">id</th>
+                <th class="column-nom">Nom</th>
+                <th class="column-prenom">Prenom</th>
+                <th class="column-email">Email</th>
+                <th class="column-adresse">Adresse</th>
+                <th class="column-cp">CP</th>
+                <th class="column-telephone">Telephone</th>
+            </tr>
+        </thead>
+        <?php foreach($tab as $id=>$value) : ?>       
+            <tbody>
+                <tr id="post-38" class="alternate author-self status-publish iedit" valign="top">
+                    <td class="column-id"><?php echo $value['id']; ?></td>
+                    <td class="column-nom"><?php echo $value['nom']; ?></td>
+                    <td class="column-prenom"><?php echo $value['prenom']; ?></td>
+                    <td class="column-email"> <?php echo $value['email']; ?></td>
+                    <td class="column-adresse"><?php echo $value['adresse']; ?></td>
+                    <td class="column-cp"><?php echo $value['cp']; ?></td>
+                    <td class="column-telephone"><?php echo $value['telephone']; ?></td>
+                </tr>    
+            </tbody>
+        <?php endforeach; ?>
+    </table>
+    </div>
+<?php include 'templates/_footer.html'; ?>
+
+
+

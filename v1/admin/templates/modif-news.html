@@ -1,0 +1,21 @@
+<?php include 'templates/_header.html'; ?>
+
+    <h2 class="admin">Liste des articles</h2>
+    <div id="contenu">
+        <ul class="menu_news">
+            <li class="id">id</li>
+            <li class="title">Titre</li>
+            <li class="modif-del">Modifier</li>
+            <li class="modif-del">Supprimer</li>
+        </ul>
+    
+            <?php foreach($tab as $id=>$value) : ?>
+            <div class="post">
+                <li class="id"><?php echo $value['id']; ?></li>
+                <h3><?php echo $value['title']; ?></h3>
+                <a class="modify" href="article-modif.php?id=<?php echo $id; ?>"><span>Modifier</span></a>
+                <a class="delete" onclick='return confirm("Voulez vous vraiment supprimer cet article ?")' href="delete.php?id=<?php echo $id;?>"><span>Suprimer</span></a>
+            </div>
+            <?php endforeach; ?>
+    </div>
+<?php include 'templates/_footer.html'; ?>

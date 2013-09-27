@@ -1,0 +1,385 @@
+body{
+    background:#FFFFFF;
+}
+
+.clearBoth{
+    clear:both;
+}
+
+h2.title_h2{
+    font-size:22px;
+    color:#777;
+    margin-bottom: 50px; margin-left: 80px;
+}
+#container{
+    width:960px;
+    margin:0 auto;
+}
+
+#concours_header{
+    float:right;
+    padding-top:30px;
+}
+#content_top{
+    width:984px;
+    margin:0 auto;
+    height:32px;
+    background:url(img/content_top.png) no-repeat;
+}
+
+#content{
+    width:984px;
+    margin:0 auto;
+    background:url(img/bg_container.png) repeat-y;
+    padding-bottom:60px;
+}
+
+#header{
+    width:960px;
+    margin:0 auto;
+    padding-bottom:20px;
+}
+
+#logo{
+    width:171px;
+    height:73px;
+    margin:0 auto;
+    float:left;
+    margin-top:22px;
+}
+
+#menu{
+    width:100%;
+    height:59px;
+    background:url(img/menu_034_bg.jpg) repeat-x;
+}
+
+#menu_content{
+    width:960px;
+    margin:0 auto;
+}
+
+#menu ul{
+    list-style:none;
+    float:right;
+}
+#menu li{
+    list-style:none;
+    display:block;
+    float:left;
+    height:59px;
+    line-height:59px;
+}
+
+#menu li a{
+    display:block;
+    float:left;
+    color:#a7a7a7;
+    text-transform:uppercase;
+    font-size:11px;
+    font-weight:bold;
+    line-height:59px;
+    text-decoration:none;
+    padding:0 20px;				
+}
+
+#menu li a:hover{
+    color:#fff;
+    background:url(img/menu_034_h.jpg) no-repeat bottom;
+}
+
+#menu li a.current{
+    display:block;
+    float:left;
+    background:url(img/menu_034_h.jpg) no-repeat bottom;
+    color:#fff;
+    text-transform:uppercase;
+    font-size:11px;
+    font-weight:bold;
+    line-height:59px;
+    text-decoration:none;
+    padding:0 20px;	
+}
+
+#menu li a:hover.current{
+    color:#fff;
+}
+
+#gallery{
+    background:url(img/bg_slider.png) no-repeat;
+    width:700px;
+    height:395px;
+    margin:0 auto;
+    margin-bottom:50px;
+}
+
+#actus{
+    width:350px;
+    float:left;
+    padding-left: 130px;
+    border-right:1px solid #8c8c8c;
+    text-align:justify;
+    padding-right:30px;
+}
+
+#actus h2{
+    color:#8c8c8c;
+    font-size:22px;
+    padding-bottom:25px;
+}
+
+#actus h3{
+    font-weight:bold;
+    padding-bottom:5px;
+    margin-top: 10px;
+}
+
+#actus h3 span.date{
+    font-weight:normal;
+    font-size:12px;
+}
+
+#actus a{
+    color:#46ABFF;
+    text-decoration:none;
+}
+
+#actus a:hover{
+    text-decoration:underline;
+}
+
+#actus p.more{
+    margin-top: 10px;
+    float:right;
+    display:block;
+    margin-bottom:20px;
+}
+
+#concours{
+    background:url(img/oeuf.png) no-repeat center;
+    width:257px;
+    float:right;
+    margin-right: 130px;
+    height:226px;
+}
+
+#concours a{
+    background:url(img/btn_participation.png) no-repeat top;
+    height:47px;
+    display:block;
+    margin-top:260px;
+    margin-left: 40px;
+}
+
+#concours a:hover{
+    background:url(img/btn_participation.png) no-repeat bottom;
+}
+
+#concours a span{
+    display:none;
+}
+
+#footer{
+    background:url(img/bg_footer.png) repeat-x;
+    height:102px;
+}
+
+#footer_content{
+    background:url(img/bg_footer_content.png) no-repeat;
+    width:960px;
+    margin:0 auto;
+    height:102px;
+}
+
+#footer_content ul{
+    padding-top:30px;
+    width:260px;
+    margin:0 auto;
+}
+
+#footer_content ul li{
+    float:left;
+    padding-left:20px;
+}
+
+#footer_content ul li a{
+    color:#ffffff;
+    text-decoration:none;
+    display:block;
+}
+
+#footer_content ul li a:hover{
+    color:#000000;
+}
+
+p.copyright{
+    width: 210px;
+    color:#ffffff;
+    margin:0 auto;
+    margin-top: -30px;
+}
+
+/*
+	Slideshow
+*/
+
+#slides{
+	padding-top: 18px;
+	padding-left: 18px;
+}
+
+.slides_container {
+	width: 666px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+.slides_container a {
+	width: 658px;
+        height: 320px;
+	display:block;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin:30px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+/* Formulaire */
+#contact{
+    width:960px;
+    margin:0 auto;
+}
+
+.message{
+	display:none;
+        float:right;
+}
+
+label.error{
+    float:right;
+    width:400px;
+    color:#C41A18;
+    text-align:left;
+    line-height:10px;
+    height:16px;
+}
+
+form{
+	width:900px;
+	margin:0 auto;
+	border-radius:1em; /*Trop cool pour IE :) */
+	-moz-border-radius:1em; /*Trop cool pour IE :) */
+}
+
+form label{
+	display:block;
+	float:left;
+	width:150px;
+	text-align:right;
+}
+
+form input, form select, form textarea{
+	width:300px;
+	margin-bottom:20px;
+	margin-left:10px;
+}
+
+form button{
+	position:relative;
+	left:160px;
+}
+
+#reglement{
+    text-align:justify;
+    margin-top: 60px;
+    width:900px;
+    margin:0 auto;
+}
+
+#reglement h3{
+    font-size:18px;
+    color:#000000;
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+#reglement h4{
+    font-size:16px;
+	color:#777;
+}
+
+#reglement h5{
+    font-size:14px;
+	color:#777;
+}
+
+#reglement p{
+    margin-top: 10px; margin-bottom: 10px;
+}
+
+ul.thumb {
+	float: left;
+	list-style: none;
+	margin: 0; padding:20px;
+	width: 250px;
+}
+ul.thumb li {
+	margin: 0; padding: 5px;
+	float: left;
+	position: relative;  /* Set the absolute positioning base coordinate */
+	width: 110px;
+	height: 110px;
+}
+ul.thumb li img {
+	width: 100px; height: 100px; /* Set the small thumbnail size */
+	-ms-interpolation-mode: bicubic; /* IE Fix for Bicubic Scaling */
+	border: 1px solid #ddd;
+	padding: 5px;
+	background: #f0f0f0;
+	position: absolute;
+	left: 0; top: 0;
+}
+ul.thumb li img.hover {
+	background:url(img/thumb_bg.png) no-repeat center center; 
+	border: none; /* Get rid of border on hover */
+}
+
+#main_view {
+	float: left;
+	padding: 9px 0;
+	margin-left: -10px;
+        width:680px;
+}
+
+#error_message{
+    width:300px;
+    float:right;
+}

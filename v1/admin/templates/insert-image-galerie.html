@@ -1,0 +1,28 @@
+<?php include 'templates/_header.html'; ?>
+<h2 class="admin">Ajouter / Supprimer une image de la galerie</h2>
+    <div id="contenu">
+        <form method="post" action="insert-image-galerie.php" enctype="multipart/form-data">
+            <input type="hidden" name="MAX_FILE_SIZE" value="">
+            Nom de l'image : <br />
+            <input type="text" name="titre" />
+            <input id="image" type="file" name="img"/>
+            <input type="submit" name="Envoyer"/>
+        </form>
+        
+        <ul class="menu_participant">
+            <li class="id">id</li>
+            <li class="title">Titre</li>
+            <li>Image</li>
+            <li class="modif-del">Supprimer</li>
+        </ul>
+        
+        <?php foreach($image_galerie as $id=>$value) : ?>
+            <div class="post_image">
+                <li class="id"><?php echo $value['id']; ?></li>
+                <h3><?php echo $value['titre']; ?></h3>
+                <img src="<?php echo $value['lien_admin']; ?>" />
+                <a class="delete" onclick='return confirm("Voulez vous vraiment supprimer cette image ?")' href="delete-image-galerie.php?id=<?php echo $id;?>"><span>Suprimer</span></a>
+            </div>
+            <?php endforeach; ?>
+    </div>
+<?php include 'templates/_footer.html'; ?>
