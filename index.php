@@ -17,6 +17,7 @@ if ($directory = opendir('.')) {
         }
     }
     closedir($directory);
+echo 'blop';
 }
 ?>
 <!DOCTYPE html>
